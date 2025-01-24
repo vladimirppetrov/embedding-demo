@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9fa97cb7-4ea1-4b01-8bdf-46122a2c4feb</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\embedded_sentences.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\embedded_sentences.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OpenAI" Version="2.1.0" />
+    <PackageReference Include="Pinecone.Client" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSSqlServerDB\MSSqlServerDB.csproj" />
+  </ItemGroup>
+
+</Project>

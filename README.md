@@ -1,1 +1,1 @@
-# embedding-demo
+# Embeddings
